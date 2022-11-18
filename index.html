@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        margin-top: 50px;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      tfoot {
+        border-top: 3px solid #1e1e1e;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="button"]:active {
+        background-color: #cce4ff;
+        border: 1px solid #4eab70;
+      }
+      #imputcard {
+        border: 2px solid #4c0bae;
+        padding: 10px;
+        background-color: #cce4ff;
+        border-radius: 1rem;
+        max-width: 570px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      First fill the form then click the button to add a new row of the table .
+    </p>
+
+    <div id="imputcard">
+      <lable>Product name : </lable
+      ><input id="product" name="product name" type="text" /><br />
+      <lable>Product price : </lable
+      ><input id="price" name="product price" type="number" /><br />
+      <lable>Product quantity : </lable
+      ><input id="quantity" name="product quantity" type="number" /><br />
+      <input id="action_button" type="button" colspan="3" value="Add" />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Products</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
